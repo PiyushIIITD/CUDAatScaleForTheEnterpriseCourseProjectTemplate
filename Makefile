@@ -44,8 +44,8 @@ DATA_DIR = data
 LIB_DIR = lib
 
 # Define source files and target executable
-SRC = $(SRC_DIR)/imageRotationNPP.cpp
-TARGET = $(BIN_DIR)/imageRotationNPP
+SRC = $(SRC_DIR)/kmeans.cu
+TARGET = $(BIN_DIR)/kmeans
 
 # Define the default rule
 all: $(TARGET)
