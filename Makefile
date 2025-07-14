@@ -35,7 +35,8 @@
 NVCC = /usr/local/cuda/bin/nvcc
 CXX = g++
 CXXFLAGS = -std=c++11 -I/usr/local/cuda/include -Iinclude
-LDFLAGS = -L/usr/local/cuda/lib64 -lcudart -lnppc -lnppial -lnppicc -lnppidei -lnppif -lnppig -lnppim -lnppist -lnppisu -lnppitc
+LDFLAGS = -L/usr/local/cuda/lib64 -lcudart -lnppc -lnppial -lnppicc -lnppidei -lnppif -lnppig -lnppim -lnppist -lnppisu -lnppitc  -lcufft
+
 
 # Define directories
 SRC_DIR = src
@@ -44,8 +45,8 @@ DATA_DIR = data
 LIB_DIR = lib
 
 # Define source files and target executable
-SRC = $(SRC_DIR)/kmeans.cu
-TARGET = $(BIN_DIR)/kmeans
+SRC = $(SRC_DIR)/cuda_K-means.cu
+TARGET = $(BIN_DIR)/cuda_K-means
 
 # Define the default rule
 all: $(TARGET)
@@ -53,7 +54,7 @@ all: $(TARGET)
 # Rule for building the target executable
 $(TARGET): $(SRC)
 	mkdir -p $(BIN_DIR)
-	$(NVCC) $(CXXFLAGS) $(SRC) -o $(TARGET) $(LDFLAGS)
+	$(NVCC) -arch=compute_75 -code=sm_75 $(CXXFLAGS) $(SRC) -o $(TARGET) $(LDFLAGS)
 
 # Rule for running the application
 run: $(TARGET)

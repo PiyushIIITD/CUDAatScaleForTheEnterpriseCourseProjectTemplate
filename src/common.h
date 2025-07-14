@@ -3,5 +3,11 @@
 #define N 10000
 #define K 5
 #define MAX_ITERS 100
-struct Point { float x, y; int cluster; };
+struct __align__(16) Point {
+    float x, y;
+    int cluster;
+
+    __host__ __device__
+    Point() : x(0), y(0), cluster(-1) {}
+};
 #endif
