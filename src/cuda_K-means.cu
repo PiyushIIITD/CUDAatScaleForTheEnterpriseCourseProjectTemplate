@@ -8,7 +8,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "/home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/src/stb_image.h"
-#include "/home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/src/common.h"
+#include "/home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/src/common.h" //K clusters and N points defined
 #include "/home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/src/timer.h"
 #include "/home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/src/stb_image_write.h"
 #define IMG_COUNT 10
@@ -30,8 +30,9 @@
         } \
     } while (0)
 
-// ---------------------- CUDA Kernels ----------------------------
+// --CUDA Kernels --
 
+//Sobel edge detection for contour edge detections and filtering
 __global__ void sobel_filter_kernel(unsigned char *input, unsigned char *output, int width, int height) {
     int x = blockIdx.x * blockDim.x + threadIdx.x;
     int y = blockIdx.y * blockDim.y + threadIdx.y;
@@ -46,9 +47,8 @@ __global__ void sobel_filter_kernel(unsigned char *input, unsigned char *output,
     if (x == 10 && y == 10) {
     printf("Sobel@(%d,%d): gx=%d, gy=%d, g=%d\n", x, y, gx, gy, g);
 }
-
 }
-
+//Gaussian blur for noise reduction
 __global__ void gaussian_blur_kernel(unsigned char *input, unsigned char *output, int width, int height) {
     const float kernel[3][3] = {
         {1/16.f, 2/16.f, 1/16.f},
@@ -73,37 +73,34 @@ __global__ void gaussian_blur_kernel(unsigned char *input, unsigned char *output
 
     output[y * width + x] = (unsigned char)sum;
 }
-
+//distance kernel function
 __device__ float distance(float x1, float y1, float x2, float y2) {
     return sqrtf((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2));
 }
 
+//clusters assigning (5 clusters are been defined)
 __global__ void assign_clusters(Point *points, float *cx, float *cy, int numpoints) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i >= numpoints) return;
-
     float min_dist = FLT_MAX;
     int cluster = -1;
     for (int k = 0; k < K; ++k) {
     float dx = points[i].x - cx[k];
     float dy = points[i].y - cy[k];
     float dist = dx * dx + dy * dy;
-
     if (dist < min_dist) {
         min_dist = dist;
         cluster = k;
     }
     }
     points[i].cluster = cluster;
-    if (i == 0) {
-    printf("Thread %d: Assigned cluster %d\n", i, cluster);
-}
     if (i < 5) { 
         printf("GPU assign_clusters: point[%d] = (%.1f, %.1f) → cluster %d\n",
                i, points[i].x, points[i].y, cluster);
     }
 }
 
+//centroid calculation based on assigned clusters distances
 __global__ void compute_centroids(Point *points, float *cx, float *cy, int *counts, int numpoints) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
     if (i >= numpoints) return;
@@ -117,8 +114,7 @@ __global__ void compute_centroids(Point *points, float *cx, float *cy, int *coun
 }
 
 
-// ---------------------- Image to Point Generator ----------------------------
-
+// --Image Generation--
 int generate_points_from_image(Point *points, unsigned char *img, int w, int h) {
     float max_val = 0.0f, min_val = 255.0f;
     int histogram[256] = {0};
@@ -129,7 +125,7 @@ int generate_points_from_image(Point *points, unsigned char *img, int w, int h) 
         histogram[val]++;
     }
     printf("Intensity range: min = %.2f, max = %.2f\n", min_val, max_val);
-    float dynamic_threshold = 0.01f * max_val;  // Adjustable multiplier
+    float dynamic_threshold = 0.01f * max_val; 
     printf("Dynamic threshold set to: %.2f (1%% of max)\n", dynamic_threshold);
     int idx = 0;
     for (int y = 0; y < h && idx < N; ++y) {
@@ -146,8 +142,6 @@ int generate_points_from_image(Point *points, unsigned char *img, int w, int h) 
     printf("Valid points found after thresholding: %d\n", idx);
     return idx;
 }
-
-// ---------------------- Main ----------------------------
 
 int main() {
     GpuTimer timer;
@@ -171,41 +165,34 @@ int main() {
         fprintf(stderr, "Failed to load image: %s\n", imageFiles[i]);
         return -1;
     }
-    printf("✅ Loaded image: %s (%dx%d)\n", imageFiles[i], w, h);
-    
-    // ==== FFT Setup ====
+    printf("Loaded image: %s (%dx%d)\n", imageFiles[i], w, h);
     int fft_width = w;
     int fft_height = h;
     size_t real_size = w * h * sizeof(float);
     size_t complex_size = w * (h / 2 + 1) * sizeof(cufftComplex);
-
-    // Convert uchar → float
     float *d_img_real;
     cufftComplex *d_img_freq;
     float *d_img_ifft;
-
     CUDA_CHECK(cudaMalloc(&d_img_real, real_size));
     CUDA_CHECK(cudaMalloc(&d_img_freq, complex_size));
     CUDA_CHECK(cudaMalloc(&d_img_ifft, real_size));
-
     float *h_img_float = (float*)malloc(real_size);
     for (int i = 0; i < w * h; ++i)
-        h_img_float[i] = (float)h_img[i];// just cast + normalize if needed
-
+        h_img_float[i] = (float)h_img[i];
     CUDA_CHECK(cudaMemcpy(d_img_real, h_img_float, real_size, cudaMemcpyHostToDevice));
 
-    // FFT Plan: real-to-complex
+    // FFT real-to-complex
     cufftHandle plan_fwd, plan_inv;
     CUFFT_CHECK(cufftPlan2d(&plan_fwd, fft_height, fft_width, CUFFT_R2C));
     CUFFT_CHECK(cufftPlan2d(&plan_inv, fft_height, fft_width, CUFFT_C2R));
 
-
     // FFT Forward
     CUFFT_CHECK(cufftExecR2C(plan_fwd, d_img_real, d_img_freq));
 
-    // IFFT (back to image)
+    // IFFT
     CUFFT_CHECK(cufftExecC2R(plan_inv, d_img_freq, d_img_ifft));
-    // Copy IFFT result back and normalize
+
+    // Normalize copy image 
     float *h_ifft_out = (float *)malloc(real_size);
     unsigned char *h_img_ifft_u8 = (unsigned char *)malloc(w * h);
     CUDA_CHECK(cudaMemcpy(h_ifft_out, d_img_ifft, real_size, cudaMemcpyDeviceToHost));
@@ -214,22 +201,19 @@ int main() {
     float max_val = -FLT_MAX;
     float min_val = FLT_MAX;
     for (int i = 0; i < w * h; ++i) {
-        h_ifft_out[i] /= (w * h);  // Normalize CUFFT output
+        h_ifft_out[i] /= (w * h);
         if (h_ifft_out[i] > max_val) max_val = h_ifft_out[i];
         if (h_ifft_out[i] < min_val) min_val = h_ifft_out[i];
     }
     for (int i = 0; i < w * h; ++i) {
-        float val = (h_ifft_out[i] - min_val) / (max_val - min_val); // [0,1]
+        float val = (h_ifft_out[i] - min_val) / (max_val - min_val); // clamped to [0, 1]
         val *= 255.0f;
         h_img_ifft_u8[i] = (unsigned char)(fminf(fmaxf(val, 0.0f), 255.0f));
     }
-    // Save IFFT output
     char ifft_filename[256];
     snprintf(ifft_filename, sizeof(ifft_filename), "ifft_image_%d.png", i);
     stbi_write_png(ifft_filename, w, h, 1, h_img_ifft_u8, w);
     printf("IFFT Saved: %s\n", ifft_filename);
-
-    // Allocate GPU memory for image
     unsigned char *d_img_in, *d_img_tmp, *d_img_out;
     size_t img_size = w * h * sizeof(unsigned char);
     CUDA_CHECK(cudaMalloc(&d_img_in, img_size));
@@ -240,31 +224,29 @@ int main() {
     dim3 block(16, 16);
     dim3 grid((w + block.x - 1) / block.x, (h + block.y - 1) / block.y);
 
-    // Apply Gaussian Blur
     gaussian_blur_kernel<<<grid, block>>>(d_img_in, d_img_tmp, w, h);
     CUDA_CHECK(cudaDeviceSynchronize());
 
-    // Apply Sobel Filter
     sobel_filter_kernel<<<grid, block>>>(d_img_tmp, d_img_out, w, h);
     CUDA_CHECK(cudaDeviceSynchronize());
 
-    // Copy back processed image
     unsigned char *h_img_processed = (unsigned char*)malloc(img_size);
     CUDA_CHECK(cudaMemcpy(h_img_processed, d_img_out, img_size, cudaMemcpyDeviceToHost));
-    // Save Sobel output
+    
     char sobel_filename[256];
     snprintf(sobel_filename, sizeof(sobel_filename), "sobel_image_%d.png", i);
     stbi_write_png(sobel_filename, w, h, 1, h_img_processed, w);
     printf("Sobel Saved: %s\n", sobel_filename);
 
-    // Generate points
+    //Points generation
     Point *h_points = (Point*)malloc(N * sizeof(Point));
     int valid_points = generate_points_from_image(h_points, h_img_processed, w, h);
     if (valid_points == 0) {
         printf("No valid points found after preprocessing. Try reducing intensity threshold.\n");
         return -1;
     }
-    // K-Means memory
+
+    // K-Means processing
     Point *d_points;
     float *d_cx, *d_cy;
     int *d_counts;
@@ -273,11 +255,8 @@ int main() {
     CUDA_CHECK(cudaMalloc(&d_cx, K * sizeof(float)));
     CUDA_CHECK(cudaMalloc(&d_cy, K * sizeof(float)));
     CUDA_CHECK(cudaMalloc(&d_counts, K * sizeof(int)));
-
     CUDA_CHECK(cudaMemcpy(d_points, h_points, valid_points * sizeof(Point), cudaMemcpyHostToDevice));
     cudaMemcpy(h_counts, d_counts, K * sizeof(int), cudaMemcpyDeviceToHost);
-
-
     CUDA_CHECK(cudaMemcpy(d_cx, h_cx, K * sizeof(float), cudaMemcpyHostToDevice));
     CUDA_CHECK(cudaMemcpy(d_cy, h_cy, K * sizeof(float), cudaMemcpyHostToDevice));
     for (int j = 0; j < K; ++j) {
@@ -285,14 +264,12 @@ int main() {
             printf("Invalid centroid %d: (%.2f, %.2f)\n", j, h_cx[j], h_cy[j]);
         }
     }
-    dim3 blockDim(256);
-    dim3 gridDim((valid_points + blockDim.x - 1) / blockDim.x);
-
-    timer.Start();
 
     //Kernel CALL
-
     for (int i = 0; i < 50; ++i) {
+    dim3 blockDim(256);
+    dim3 gridDim((valid_points + blockDim.x - 1) / blockDim.x);
+    timer.Start();
         assign_clusters<<<gridDim, blockDim>>>(d_points, d_cx, d_cy, valid_points);
         CUDA_CHECK(cudaGetLastError());
         CUDA_CHECK(cudaDeviceSynchronize());
@@ -334,12 +311,13 @@ int main() {
     for (int i = 0; i < min(20,valid_points); ++i) {
     if (h_points[i].cluster == -1) continue;
     }
-    // Visualize clustered points
+
+    //clustered points
     unsigned char *cluster_rgb = (unsigned char *)calloc(w * h * 3, sizeof(unsigned char));
     unsigned char colors[8][3] = {
         {255, 0, 0}, {0, 255, 0}, {0, 0, 255},
         {255, 255, 0}, {255, 0, 255}, {0, 255, 255},
-        {128, 128, 0}, {255, 165, 0} // support up to 8 clusters
+        {128, 128, 0}, {255, 165, 0} 
     };
     for (int i = 0; i < valid_points; ++i) {
         int x = (int)h_points[i].x;
@@ -375,10 +353,6 @@ int main() {
     else{
         printf("Clustered image saved as %s\n", output_filename);
     }
-    for (int i = 0; i < 10; ++i) {
-        printf("Point (%.1f, %.1f) → Cluster %d\n", h_points[i].x, h_points[i].y, h_points[i].cluster);
-    }
-
     // Cleanup
     CUDA_CHECK(cudaFree(d_img_in));
     CUDA_CHECK(cudaFree(d_img_tmp));
@@ -390,7 +364,6 @@ int main() {
     free(h_img);
     free(h_img_processed);
     free(h_points);
-    // After all processing
     CUDA_CHECK(cudaFree(d_img_real));
     CUDA_CHECK(cudaFree(d_img_freq));
     CUDA_CHECK(cudaFree(d_img_ifft));
