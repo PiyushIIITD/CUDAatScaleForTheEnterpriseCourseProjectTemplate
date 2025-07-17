@@ -46,7 +46,7 @@ An optional script used to run your executable code, either with or without comm
 
 ## Key Concepts
 
-Performance Strategies, Image Processing, cufft Library
+Performance Strategies, Image Processing, Image segmentation and Filteration, cufft Library, Fast-Fourier-Transform with Inverse Fast-Fourier-Transform.
 
 ## Supported SM Architectures
 
