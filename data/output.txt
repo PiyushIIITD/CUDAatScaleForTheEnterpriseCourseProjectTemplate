@@ -1,0 +1,1013 @@
+### This is the output of the kmeans computations ###
+
+Iteration 9:
+  Cluster 0 has 1644 points
+  Cluster 1 has 1387 points
+  Cluster 2 has 2514 points
+  Cluster 3 has 2393 points
+  Cluster 4 has 2062 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 10:
+  Cluster 0 has 1667 points
+  Cluster 1 has 1469 points
+  Cluster 2 has 2480 points
+  Cluster 3 has 2322 points
+  Cluster 4 has 2062 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 11:
+  Cluster 0 has 1704 points
+  Cluster 1 has 1537 points
+  Cluster 2 has 2440 points
+  Cluster 3 has 2292 points
+  Cluster 4 has 2027 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 12:
+  Cluster 0 has 1727 points
+  Cluster 1 has 1584 points
+  Cluster 2 has 2378 points
+  Cluster 3 has 2285 points
+  Cluster 4 has 2026 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 13:
+  Cluster 0 has 1748 points
+  Cluster 1 has 1633 points
+  Cluster 2 has 2344 points
+  Cluster 3 has 2250 points
+  Cluster 4 has 2025 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 14:
+  Cluster 0 has 1777 points
+  Cluster 1 has 1674 points
+  Cluster 2 has 2310 points
+  Cluster 3 has 2215 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 15:
+  Cluster 0 has 1812 points
+  Cluster 1 has 1709 points
+  Cluster 2 has 2277 points
+  Cluster 3 has 2178 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 16:
+  Cluster 0 has 1828 points
+  Cluster 1 has 1744 points
+  Cluster 2 has 2243 points
+  Cluster 3 has 2142 points
+  Cluster 4 has 2043 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 17:
+  Cluster 0 has 1849 points
+  Cluster 1 has 1777 points
+  Cluster 2 has 2210 points
+  Cluster 3 has 2140 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 18:
+  Cluster 0 has 1850 points
+  Cluster 1 has 1811 points
+  Cluster 2 has 2176 points
+  Cluster 3 has 2139 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 19:
+  Cluster 0 has 1882 points
+  Cluster 1 has 1814 points
+  Cluster 2 has 2141 points
+  Cluster 3 has 2139 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 20:
+  Cluster 0 has 1885 points
+  Cluster 1 has 1846 points
+  Cluster 2 has 2132 points
+  Cluster 3 has 2113 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 21:
+  Cluster 0 has 1919 points
+  Cluster 1 has 1847 points
+  Cluster 2 has 2106 points
+  Cluster 3 has 2104 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 22:
+  Cluster 0 has 1920 points
+  Cluster 1 has 1881 points
+  Cluster 2 has 2077 points
+  Cluster 3 has 2098 points
+  Cluster 4 has 2024 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 23:
+  Cluster 0 has 1954 points
+  Cluster 1 has 1882 points
+  Cluster 2 has 2072 points
+  Cluster 3 has 2069 points
+  Cluster 4 has 2023 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 24:
+  Cluster 0 has 1945 points
+  Cluster 1 has 1916 points
+  Cluster 2 has 2037 points
+  Cluster 3 has 2071 points
+  Cluster 4 has 2031 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 25:
+  Cluster 0 has 1955 points
+  Cluster 1 has 1916 points
+  Cluster 2 has 2037 points
+  Cluster 3 has 2038 points
+  Cluster 4 has 2054 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 26:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1916 points
+  Cluster 2 has 2002 points
+  Cluster 3 has 2073 points
+  Cluster 4 has 2019 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 27:
+  Cluster 0 has 1955 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 2002 points
+  Cluster 3 has 2039 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 28:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 2002 points
+  Cluster 3 has 2039 points
+  Cluster 4 has 2018 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 29:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 2002 points
+  Cluster 3 has 2004 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 30:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 31:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 32:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 33:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 34:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 35:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 36:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 37:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 38:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 39:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 40:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 41:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 42:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 43:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 44:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 45:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 46:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 47:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 48:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 49:
+  Cluster 0 has 1990 points
+  Cluster 1 has 1951 points
+  Cluster 2 has 1969 points
+  Cluster 3 has 2037 points
+  Cluster 4 has 2053 points
+K-Means completed in 0.904 ms.
+Copied 10000 points from device
+Pixels with nonzero color: 15383
+Clustered image saved as output_clusters_8.png
+Loaded image: /home/piyush/Downloads/Cuda-K_means/CUDAatScaleForTheEnterpriseCourseProjectTemplate/images/barbara.pgm (512x512)
+IFFT Saved: ifft_image_9.png
+Sobel@(10,10): gx=53, gy=369, g=255
+Sobel Saved: sobel_image_9.png
+Intensity range: min = 0.00, max = 255.00
+Dynamic threshold set to: 2.55 (1% of max)
+Valid points found after thresholding: 10000
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 0:
+  Cluster 0 has 1118 points
+  Cluster 1 has 1100 points
+  Cluster 2 has 5543 points
+  Cluster 3 has 1131 points
+  Cluster 4 has 1108 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 1:
+  Cluster 0 has 1137 points
+  Cluster 1 has 1100 points
+  Cluster 2 has 4463 points
+  Cluster 3 has 2193 points
+  Cluster 4 has 1107 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 2:
+  Cluster 0 has 1117 points
+  Cluster 1 has 1120 points
+  Cluster 2 has 3903 points
+  Cluster 3 has 2490 points
+  Cluster 4 has 1370 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 3:
+  Cluster 0 has 1188 points
+  Cluster 1 has 1120 points
+  Cluster 2 has 3543 points
+  Cluster 3 has 2592 points
+  Cluster 4 has 1557 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 4:
+  Cluster 0 has 1268 points
+  Cluster 1 has 1140 points
+  Cluster 2 has 3303 points
+  Cluster 3 has 2620 points
+  Cluster 4 has 1669 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 5:
+  Cluster 0 has 1325 points
+  Cluster 1 has 1180 points
+  Cluster 2 has 3123 points
+  Cluster 3 has 2600 points
+  Cluster 4 has 1772 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 6:
+  Cluster 0 has 1389 points
+  Cluster 1 has 1220 points
+  Cluster 2 has 2983 points
+  Cluster 3 has 2560 points
+  Cluster 4 has 1848 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 7:
+  Cluster 0 has 1439 points
+  Cluster 1 has 1280 points
+  Cluster 2 has 2883 points
+  Cluster 3 has 2500 points
+  Cluster 4 has 1898 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 8:
+  Cluster 0 has 1494 points
+  Cluster 1 has 1340 points
+  Cluster 2 has 2783 points
+  Cluster 3 has 2480 points
+  Cluster 4 has 1903 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 9:
+  Cluster 0 has 1534 points
+  Cluster 1 has 1400 points
+  Cluster 2 has 2703 points
+  Cluster 3 has 2440 points
+  Cluster 4 has 1923 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 10:
+  Cluster 0 has 1593 points
+  Cluster 1 has 1440 points
+  Cluster 2 has 2643 points
+  Cluster 3 has 2380 points
+  Cluster 4 has 1944 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 11:
+  Cluster 0 has 1633 points
+  Cluster 1 has 1500 points
+  Cluster 2 has 2583 points
+  Cluster 3 has 2340 points
+  Cluster 4 has 1944 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 12:
+  Cluster 0 has 1652 points
+  Cluster 1 has 1560 points
+  Cluster 2 has 2523 points
+  Cluster 3 has 2320 points
+  Cluster 4 has 1945 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 13:
+  Cluster 0 has 1688 points
+  Cluster 1 has 1600 points
+  Cluster 2 has 2463 points
+  Cluster 3 has 2300 points
+  Cluster 4 has 1949 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 14:
+  Cluster 0 has 1720 points
+  Cluster 1 has 1640 points
+  Cluster 2 has 2423 points
+  Cluster 3 has 2260 points
+  Cluster 4 has 1957 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 15:
+  Cluster 0 has 1733 points
+  Cluster 1 has 1680 points
+  Cluster 2 has 2383 points
+  Cluster 3 has 2240 points
+  Cluster 4 has 1964 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 16:
+  Cluster 0 has 1744 points
+  Cluster 1 has 1720 points
+  Cluster 2 has 2343 points
+  Cluster 3 has 2220 points
+  Cluster 4 has 1973 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 17:
+  Cluster 0 has 1759 points
+  Cluster 1 has 1760 points
+  Cluster 2 has 2303 points
+  Cluster 3 has 2200 points
+  Cluster 4 has 1978 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 18:
+  Cluster 0 has 1789 points
+  Cluster 1 has 1779 points
+  Cluster 2 has 2283 points
+  Cluster 3 has 2160 points
+  Cluster 4 has 1989 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 19:
+  Cluster 0 has 1788 points
+  Cluster 1 has 1819 points
+  Cluster 2 has 2243 points
+  Cluster 3 has 2160 points
+  Cluster 4 has 1990 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 20:
+  Cluster 0 has 1804 points
+  Cluster 1 has 1839 points
+  Cluster 2 has 2223 points
+  Cluster 3 has 2140 points
+  Cluster 4 has 1994 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 21:
+  Cluster 0 has 1821 points
+  Cluster 1 has 1859 points
+  Cluster 2 has 2203 points
+  Cluster 3 has 2120 points
+  Cluster 4 has 1997 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 22:
+  Cluster 0 has 1821 points
+  Cluster 1 has 1878 points
+  Cluster 2 has 2183 points
+  Cluster 3 has 2120 points
+  Cluster 4 has 1998 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 23:
+  Cluster 0 has 1820 points
+  Cluster 1 has 1897 points
+  Cluster 2 has 2163 points
+  Cluster 3 has 2120 points
+  Cluster 4 has 2000 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 24:
+  Cluster 0 has 1823 points
+  Cluster 1 has 1913 points
+  Cluster 2 has 2143 points
+  Cluster 3 has 2120 points
+  Cluster 4 has 2001 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 25:
+  Cluster 0 has 1842 points
+  Cluster 1 has 1913 points
+  Cluster 2 has 2143 points
+  Cluster 3 has 2100 points
+  Cluster 4 has 2002 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 26:
+  Cluster 0 has 1843 points
+  Cluster 1 has 1930 points
+  Cluster 2 has 2123 points
+  Cluster 3 has 2100 points
+  Cluster 4 has 2004 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 27:
+  Cluster 0 has 1860 points
+  Cluster 1 has 1930 points
+  Cluster 2 has 2123 points
+  Cluster 3 has 2080 points
+  Cluster 4 has 2007 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 28:
+  Cluster 0 has 1860 points
+  Cluster 1 has 1949 points
+  Cluster 2 has 2103 points
+  Cluster 3 has 2080 points
+  Cluster 4 has 2008 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 29:
+  Cluster 0 has 1879 points
+  Cluster 1 has 1949 points
+  Cluster 2 has 2103 points
+  Cluster 3 has 2060 points
+  Cluster 4 has 2009 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 30:
+  Cluster 0 has 1880 points
+  Cluster 1 has 1967 points
+  Cluster 2 has 2083 points
+  Cluster 3 has 2060 points
+  Cluster 4 has 2010 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 31:
+  Cluster 0 has 1887 points
+  Cluster 1 has 1967 points
+  Cluster 2 has 2083 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2023 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 32:
+  Cluster 0 has 1898 points
+  Cluster 1 has 1967 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2060 points
+  Cluster 4 has 2012 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 33:
+  Cluster 0 has 1892 points
+  Cluster 1 has 1973 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2032 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 34:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 35:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 36:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 37:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 38:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 39:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 40:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 41:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 42:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 43:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 44:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 45:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 46:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 47:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 48:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+GPU assign_clusters: point[0] = (1.0, 1.0) → cluster 1
+GPU assign_clusters: point[1] = (2.0, 1.0) → cluster 1
+GPU assign_clusters: point[2] = (3.0, 1.0) → cluster 1
+GPU assign_clusters: point[3] = (4.0, 1.0) → cluster 1
+GPU assign_clusters: point[4] = (5.0, 1.0) → cluster 1
+Iteration 49:
+  Cluster 0 has 1895 points
+  Cluster 1 has 1986 points
+  Cluster 2 has 2063 points
+  Cluster 3 has 2040 points
+  Cluster 4 has 2016 points
+K-Means completed in 0.904 ms.
+Copied 10000 points from device
+Pixels with nonzero color: 15743
+Clustered image saved as output_clusters_9.png
