@@ -1,28 +1,42 @@
-# Image Rotation using NVIDIA NPP with CUDA
+# KMeans Computation on Images using NVIDIA CUFFT Signal Processing with CUDA
 
 ## Overview
 
-This project demonstrates the use of NVIDIA Performance Primitives (NPP) library with CUDA to perform image rotation. The goal is to utilize GPU acceleration to efficiently rotate a given image by a specified angle, leveraging the computational power of modern GPUs. The project is a part of the CUDA at Scale for the Enterprise course and serves as a template for understanding how to implement basic image processing operations using CUDA and NPP.
+This project demonstrates the use of the cuFFT (CUDA Fast Fourier Transform) library to perform signal processing on 2D image data using GPU acceleration. The primary objective is to apply forward and inverse FFTs to analyze and manipulate frequency-domain representations of images efficiently on modern NVIDIA GPUs.
+
+As part of the CUDA at Scale for the Enterprise course, this project serves as a practical template for learning how to implement and optimize basic frequency-domain operations using CUDA and cuFFT. The techniques demonstrated are fundamental in many real-world applications such as image filtering, compression, denoising, and feature extraction.
 
 ## Code Organization
 
 ```bin/```
-This folder should hold all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
+./cuda_K-means.o object file executable
 
 ```data/```
 This folder should hold all example data in any format. If the original data is rather large or can be brought in via scripts, this can be left blank in the respository, so that it doesn't require major downloads when all that is desired is the code/structure.
 
+```images/```
+Input images .pgm dataset containing 10 large images on which operation has been performed upon
+
+
 ```lib/```
-Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
+All .h files are placed here 
 
 ```src/```
-The source code should be placed here in a hierarchical fashion, as appropriate.
+src/common.h
+src/cuda_K-means.cu (main file)
+src/cuda_runtime.h (for spare purpose)
+src/imageRotationNPP.cpp though not used in this project but can be checked out for NPP use cases.
+src/stb_image_write.h
+src/stb_image.h
+src/timer.h 
 
 ```README.md```
 This file should hold the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
 
 ```INSTALL```
-This file should hold the human-readable set of instructions for installing the code so that it can be executed. If possible it should be organized around different operating systems, so that it can be done by as many people as possible with different constraints.
+1. sudo apt install nvidia-cuda-toolkit
+2. sudo apt install nvidia-smi
+3. sudo apt install nvidia-driver
 
 ```Makefile or CMAkeLists.txt or build.sh```
 There should be some rudimentary scripts for building your project's code in an automatic fashion.
@@ -32,7 +46,7 @@ An optional script used to run your executable code, either with or without comm
 
 ## Key Concepts
 
-Performance Strategies, Image Processing, NPP Library
+Performance Strategies, Image Processing, cufft Library
 
 ## Supported SM Architectures
 
@@ -47,6 +61,7 @@ Linux, Windows
 x86_64, ppc64le, armv7l
 
 ## CUDA APIs involved
+cuda_runtime.h and stb_image.h 
 
 ## Dependencies needed to build/run
 [FreeImage](../../README.md#freeimage), [NPP](../../README.md#npp)
@@ -57,6 +72,7 @@ Download and install the [CUDA Toolkit 11.4](https://developer.nvidia.com/cuda-d
 Make sure the dependencies mentioned in [Dependencies]() section above are installed.
 
 ## Build and Run
+just build by make and do a ./cuda_K-means
 
 ### Windows
 The Windows samples are built using the Visual Studio IDE. Solution files (.sln) are provided for each supported version of Visual Studio, using the format:
