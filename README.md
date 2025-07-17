@@ -126,6 +126,7 @@ If you wish to run the binary directly with custom input/output files, you can u
 - Copy code
 ./bin/imageRotationNPP --input data/Lena.png --output data/Lena_rotated.png
 ```
+(but Remember the above instruction is for NPP rotation version)
 
 - Cleaning Up
 To clean up the compiled binaries and other generated files, run:
